@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience - Portfolio</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header,
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    article {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    article h3 {
+      color: #333;
+    }
+
+    strong {
+      color: #0056b3;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    figcaption {
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    caption {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    thead {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #f4f4f4;
+    }
+
+    footer {
+      background-color: #333;
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <h1>My Experience</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>Latest Projects</h2>
+    <article>
+      <h3>Project One</h3>
+      <p>This is a <strong>brief description</strong> of my first project. I used HTML, CSS, and JavaScript.</p>
+      <picture>
+        <source media="(min-width: 800px)" srcset="imgs/project1.png">
+        <source media="(min-width: 400px)" srcset="imgs/project2.png">
+        <!-- The img element is required as the last child. -->
+        <img src="imgs/project1.png" alt="Project Two Screenshot" width="300" height="200">
+      </picture>
+    </article>
+    <article>
+      <h3>Project Two</h3>
+      <p>This is a <strong>brief description</strong> of my second project. I used Python and Django.</p>
+      <picture>
+        <source media="(min-width: 800px)" srcset="imgs/project2.png">
+        <source media="(min-width: 400px)" srcset="imgs/project1.png">
+        <!-- The img element is required as the last child. -->
+        <img src="imgs/project2.png" alt="Project Two Screenshot" width="300" height="200">
+      </picture>
+    </article>
+  </section>
+  <section>
+    <h2>Work Experience</h2>
+    <article>
+      <h3>Web Developer at Company A</h3>
+      <p><b>Duration:</b> January 2020 - Present</p>
+      <p><b>Role:</b> Full Stack Developer</p>
+      <p><b>Responsibilities:</b> Developing and maintaining web applications, collaborating with the design team, and ensuring optimal performance.</p>
+    </article>
+    <article>
+      <h3>Intern at <em>Company B</em></h3>
+      <p><b>Duration:</b> June 2018 - August 2019</p>
+      <p><b>Role:</b> Front-end Developer Intern</p>
+      <p><b>Responsibilities:</b> Assisting in the development of front-end components and learning about best practices in web development.</p>
+    </article>
+  </section>
+  <section>
+    <h2>Education</h2>
+    <table>
+      <caption>My Educational Background</caption>
+      <thead>
+      <tr>
+        <th>Degree</th>
+        <th>University</th>
+        <th>Year</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Bachelor of Science in Computer Science</td>
+        <td>University A</td>
+        <td>2016 - 2020</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+<footer>
+  <p>Copyright © 2023 by My Name</p>
+</footer>
+</body>
+</html>

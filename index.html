@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portfolio</title>
+    <link rel="stylesheet">
+    <style>
+        /* Base styles to set up the layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        aside {
+            background: #e9ecef;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section h2 {
+            color: #007bff;
+        }
+
+        form {
+            background: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            margin-bottom: 1rem;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: .5rem;
+        }
+
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: .5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #007bff;
+            color: #fff;
+            padding: .5rem 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+
+        footer {
+            background: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        footer span {
+            font-weight: bold;
+        }
+
+        details summary {
+            cursor: pointer;
+        }
+
+        audio,
+        video {
+            width: 100%;
+            display: block;
+            margin-top: 1rem;
+        }
+
+        canvas {
+            background: #007bff;
+            display: block;
+            margin-top: 1rem;
+        }
+
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+<header>
+    <h1>Welcome to Outong's Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+        </ul>
+    </nav>
+</header>
+<aside>
+    <h3>Update</h3>
+    <p><strong>Oct 23, 2023:</strong> My latest project has just gone live!.</p>
+</aside>
+<audio controls>
+    <source src="#" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+<video width="320" height="240" controls>
+    <source src="#" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<main>
+    <section>
+        <h2>Contact Me</h2>
+        <form method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:
+                    <input type="text" id="name" name="name" required>
+                </label>
+                <label for="email">Email:
+                    <input type="text" id="email" name="email" required>
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">Your Message:
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Purpose</legend>
+                <label for="service">Your Purpose:
+                    <input list="services" id="service" name="service" required>
+                    <datalist id="services">
+                        <select id="position" name="position" required>
+                            <option value="Job offering">
+                            <option value="Project cooperation">
+                            <option value="Coffee Chat">
+                            <option value="Make friends">
+                        </select>
+                    </datalist>
+                </label>
+            </fieldset>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+<hr>
+<footer>
+    <p>Copyright © 2023 by <span>Outong</span></p>
+    <details>
+        <summary>Legal Information</summary>
+        <p>This is the legal information related to the portfolio site.</p>
+    </details>
+</footer>
+
+
+</body>
+</html>
